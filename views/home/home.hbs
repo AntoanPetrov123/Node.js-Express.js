@@ -1,0 +1,20 @@
+<main>
+    <div class="container">
+        <div class="blog-message">
+            <h1 id="site-title">Blog</h1>
+            <h2 id="site-mid-title">Create your own world!</h2>
+        </div>
+
+        <div class="last-blogs">
+            {{#each allBlogs}}
+            {{> homeCard}}
+            {{else}}
+            <!--If there are still no blog posts on the database-->
+        </div>
+        <article class="not-available-blogs">
+            <h1>No blogs created yet.</h1>
+        </article>
+        {{/each}}
+
+    </div>
+</main>
